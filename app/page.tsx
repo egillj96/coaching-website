@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Hero from "@/components/Hero";
 
 type Lang = "is" | "en";
 
@@ -85,6 +86,8 @@ export default function Home() {
   }[lang];
 
   return (
+    <>
+    <Hero />
     <main className="min-h-screen bg-slate-950 text-slate-100 flex items-center justify-center px-4">
       <div className="max-w-3xl w-full space-y-12 py-12">
         {/* Top bar: language switch */}
@@ -194,5 +197,6 @@ export default function Home() {
         </footer>
       </div>
     </main>
+    </>
   );
 }
