@@ -20,9 +20,9 @@ export default function Hero() {
               <span className="text-emerald-400">without burning out.</span>
             </h1>
             <p className="max-w-xl text-sm text-neutral-300 md:text-base">
-              I help ordinary guys get leaner, stronger and more confident
-              with simple training, high-quality food and intentional habits.
-              No extreme bulks, no crash diets—just sustainable progress.
+              I help ordinary guys get leaner, stronger and more confident with
+              simple training, high-quality food and intentional habits. No
+              extreme bulks, no crash diets—just sustainable progress.
             </p>
           </div>
 
@@ -30,7 +30,9 @@ export default function Hero() {
           <ul className="grid gap-2 text-sm text-neutral-300 md:grid-cols-2">
             <li className="flex items-start gap-2">
               <span className="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-400" />
-              <span>Custom lifting plan focused on aesthetics & joint health</span>
+              <span>
+                Custom lifting plan focused on aesthetics & joint health
+              </span>
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-400" />
@@ -70,10 +72,17 @@ export default function Hero() {
 
         {/* Image / visual */}
         <div className="flex-1">
-          <div className="relative mx-auto h-64 w-64 overflow-hidden rounded-3xl border border-neutral-800 bg-gradient-to-br from-neutral-900 to-neutral-800 md:h-72 md:w-72">
-            {/* Replace src with your real photo when you have it */}
+          <div
+            className="relative mx-auto 
+                  h-80 w-80 
+                  md:h-96 md:w-96 
+                  lg:h-[420px] lg:w-[420px]
+                  overflow-hidden rounded-3xl 
+                  border border-neutral-800 
+                  bg-gradient-to-br from-neutral-900 to-neutral-800"
+          >
             <Image
-              src="/egill-placeholder.jpg"
+              src="/hero.jpg"
               alt="Coach Egill Þór"
               fill
               className="object-cover"
