@@ -1,65 +1,62 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <main className="min-h-screen bg-slate-950 text-slate-100 flex items-center justify-center px-4">
+      <div className="max-w-2xl w-full space-y-10">
+        {/* Logo / Name */}
+        <header className="space-y-2">
+          <p className="text-sm uppercase tracking-[0.2em] text-slate-400">
+            Online coaching · Reykjavík
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
+          <h1 className="text-3xl md:text-4xl font-semibold">
+            Egill Þór – Holistic Strength & Aesthetics Coaching
+          </h1>
+        </header>
+
+        {/* Hero / Promise */}
+        <section className="space-y-4">
+          <p className="text-lg text-slate-300">
+            I help ordinary guys build an aesthetic, strong and healthy body 
+            through simple training, better food and intentional living.
+          </p>
+          <p className="text-sm text-slate-400">
+            No crash diets. No extreme bulk-cut cycles. Just sustainable habits, 
+            muscle, and more energy for real life.
+          </p>
+        </section>
+
+        {/* Who it’s for */}
+        <section className="space-y-2">
+          <h2 className="text-xl font-semibold">Who this is for</h2>
+          <ul className="list-disc list-inside text-slate-300 space-y-1">
+            <li>Men who want to start lifting but feel lost in the gym</li>
+            <li>Guys who want an aesthetic body without destroying their health</li>
+            <li>Those who care about strength, energy, sleep and long-term wellbeing</li>
+          </ul>
+        </section>
+
+        {/* CTA */}
+        <section className="space-y-3">
+          <h2 className="text-xl font-semibold">Work with me</h2>
+          <p className="text-slate-300">
+            Tell me about your current situation and your goals. I&apos;ll reply 
+            personally with next steps and if my coaching is a good fit.
+          </p>
           <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="mailto:egill@example.com?subject=Coaching%20Application"
+            className="inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-medium bg-slate-100 text-slate-900 hover:bg-slate-200 transition"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
+            Email me to apply
           </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+          <p className="text-xs text-slate-500">
+            Prefer Instagram? DM me on @egillthorjo
+          </p>
+        </section>
+
+        {/* Footer */}
+        <footer className="pt-4 border-t border-slate-800 text-xs text-slate-500">
+          © {new Date().getFullYear()} Egill Þór Coaching · Reykjavík, Iceland
+        </footer>
+      </div>
+    </main>
   );
 }
